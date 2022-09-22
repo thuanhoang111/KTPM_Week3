@@ -62,7 +62,7 @@ public class AuthController {
 
 
     @GetMapping("/hello")
-//    @PreAuthorize("hasAnyAuthority('USER_READ')")
+    @PreAuthorize("hasAnyAuthority('USER_READ')")
     public ResponseEntity hello(){
         return ResponseEntity.ok("hello");
     }
